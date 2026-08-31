@@ -1,8 +1,19 @@
-import { NavLink } from 'react-router-dom'
+import { useEffect } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    document.querySelector('.main-content')?.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
 
 export default function Layout({ children }) {
   return (
     <div className="app-shell">
+      <ScrollToTop />
       <main className="main-content">
         {children}
       </main>

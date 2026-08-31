@@ -114,8 +114,10 @@ body {
 .tab-item svg { width: 22px; height: 22px; pointer-events: none; }
 .tab-item span { pointer-events: none; }
 
-.tab-item:hover,
 .tab-item.active { color: var(--accent); }
+@media (hover: hover) {
+  .tab-item:hover { color: var(--accent); }
+}
 
 /* Active tab — color only, no background */
 .tab-item.active svg {
