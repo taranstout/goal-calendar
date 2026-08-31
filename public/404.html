@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Goal Calendar</title>
+    <script>
+      // Redirect to index.html preserving the path
+      var path = window.location.pathname.replace('/goal-calendar', '')
+      window.location.replace('/goal-calendar/' + '?p=' + encodeURIComponent(path))
+    </script>
+  </head>
+  <body></body>
+</html>
