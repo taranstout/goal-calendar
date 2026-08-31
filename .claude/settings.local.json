@@ -4,7 +4,15 @@
       "Bash(npm create:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(npm run:*)",
+      "Bash(lsof -ti:5173)",
+      "Bash(python3 -c \" import sys, json for line in sys.stdin: try: obj = json.loads\\(line\\) if obj.get\\('type'\\) == 'human': msg = obj.get\\('message', {}\\) if isinstance\\(msg, dict\\): content = msg.get\\('content', ''\\) if isinstance\\(content, str\\) and content.strip\\(\\): print\\('USER:', content[:500]\\) elif isinstance\\(content, list\\): for c in content: if isinstance\\(c, dict\\) and c.get\\('type'\\) == 'text': print\\('USER:', c['text'][:500]\\) except: pass \")",
+      "Bash(python3 -c ':*)",
+      "Bash(npx vite:*)",
+      "Bash(npx:*)",
+      "Bash(gh repo:*)",
+      "Bash(ipconfig getifaddr:*)"
     ]
   }
 }
